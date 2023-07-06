@@ -1,17 +1,31 @@
 .messageBox {
   background: #F3F3F3;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 5px 20px;
   color: white;
   display: inline-block;
   max-width: 80%;
+  word-wrap: break-word;
+  line-height: 1.4;
+  margin-bottom: 5px;
 }
+
+
+.image-message {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: .4rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
 
 .messageText {
   width: 100%;
   letter-spacing: 0;
   float: left;
-  font-size: 1.6rem;
+  font-size: 17px;
   word-wrap: break-word;
   &.location {
     margin: 1em 0;
@@ -25,7 +39,7 @@
 
 .messageContainer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Adjust this based on the message direction */
   padding: 0 5%;
   margin-top: 3px;
 }
@@ -63,7 +77,11 @@
 }
 
 .backgroundOrange {
+  display: inline-block;
   background: #e07a5f;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
 }
 
 .backgroundLight {
@@ -71,7 +89,8 @@
 }
 
 .image-message {
-  width: 20rem;
+  max-width: 100%; /* Limit the width of the image to fit within the chat container */
+  max-height: 200px; /* Set the maximum height for the image to prevent it from being too big */
   border-radius: .4rem;
   object-fit: cover;
   cursor: pointer;

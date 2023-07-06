@@ -1,34 +1,49 @@
 .textContainer {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
-  color: white;
-  height: 60%;
-  justify-content: flex-end;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #4e3434;
+  border-radius: 5px;
+  align-self: flex-start;
+  color: #ffffff;
 }
 
 .activeContainer {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2%;
+  margin-bottom: 10px;
 }
 
 .activeItem {
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
 }
 
-.activeContainer img {
-  padding-left: 10px;
+.activeItem img {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
 }
 
-.textContainer h1 {
-  margin-bottom: 0px;
-  margin-left: 100px;
+.textContainer h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
-@media (min-width: 320px) and (max-width: 1200px) {
+@media (max-width: 768px) {
   .textContainer {
-    display: none;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .activeItem img {
+    width: 8px;
+    height: 8px;
+    margin-left: 3px;
+  }
+  
+  .textContainer h2 {
+    font-size: 16px;
   }
 }
